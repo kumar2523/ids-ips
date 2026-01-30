@@ -1,0 +1,17 @@
+Test your Snort configuration: config file
+sudo snort -c /etc/snort/snort_custom.lua -T
+
+To get more detalied output of kdd using snort command:
+sudo snort -c /etc/snort/snort_custom.lua -r /home/kali/Desktop/IDP/test_traffic.pcap -v
+
+View All Alerts (Unfiltered)
+If you want to see all alerts, you can use:
+sudo snort -c /etc/snort/snort_custom.lua -r /home/kali/Desktop/IDP/test_traffic.pcap
+This will display all detected attacks.
+
+sudo snort -c /etc/snort/snort_custom.lua -r /home/kali/Desktop/IDP/test_traffic.pcap
+
+sudo snort -c /etc/snort/snort_custom.lua -r /home/kali/Desktop/IDP/test_traffic.pcap | tee snort_latest.json
+
+to goto myenv the command is:
+source /home/kali/Desktop/IDP/Anomaly_meachine_learning/myenv/bin/activate
